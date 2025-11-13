@@ -1,0 +1,9 @@
+[package]
+name = "fasta_fixa"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = "4.5.51"
+clap_derive = "4.5.49"
+needletail = "0.6.3"
