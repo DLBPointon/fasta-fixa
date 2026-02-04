@@ -32,6 +32,8 @@ RUN --mount=type=bind,source=src,target=src \
 FROM docker.io/library/alpine:3.18 AS final
 ARG APP_NAME
 
+RUN apk update && apk add bash
+
 ARG UID=10001
 RUN adduser \
     --disabled-password \
