@@ -1,6 +1,6 @@
 use clap::Parser;
 
-use cli::{CLI, Commands};
+use cli::{Cli, Commands};
 use std::io::Error;
 
 use crate::processors::sort_fasta::sort_fasta_main;
@@ -10,7 +10,7 @@ mod generics;
 mod processors;
 
 pub fn run() -> Result<(), Error> {
-    let cli = CLI::parse();
+    let cli = Cli::parse();
 
     match &cli.command {
         Some(Commands::Sort {

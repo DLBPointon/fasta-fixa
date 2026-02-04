@@ -77,7 +77,7 @@ pub fn read_fasta<P: AsRef<Path>>(path: P) -> Vec<Scaffold> {
         // IF CONTAINS '_' THEN SPLIT IT AND RETURN THE SUFFIX
         // ELSE RETURN THE FULL NAME
         let scaff_suffix = if scaff_id.contains('_') {
-            scaff_id.split('_').last().unwrap()
+            scaff_id.split('_').next_back().unwrap()
         } else {
             "NA"
         };

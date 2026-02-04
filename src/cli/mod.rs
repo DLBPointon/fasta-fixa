@@ -7,7 +7,7 @@ pub const DIRECTION: [&str; 2] = ["ASCENDING", "DESCENDING"];
 // CLI for FASTA_FIXA
 #[derive(Parser)]
 #[command(version="v0.1.0", about, long_about = None)]
-pub struct CLI {
+pub struct Cli {
     #[command(subcommand)]
     pub command: Option<Commands>,
 }

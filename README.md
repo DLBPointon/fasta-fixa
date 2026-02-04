@@ -11,4 +11,8 @@ Any further additions to the program should be requested through the issues page
 ### SORT
 
 Re-sort a fasta by Length, Length and Sex Chromosomes at the top, Length and Sex Chromosomes at the bottom.
-Currently, this works by loading the fasta into memory before the re-sorting.
+Currently, this works by loading the fasta into memory before the re-sorting so could be costly on large genomes.
+
+### ToDo:
+    - Index the genome
+        - take index, scan for scaffold, read and save and in new order.
